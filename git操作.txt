@@ -24,6 +24,9 @@ git Clone https://github.com/peggylau/python.git
 Ø git remote add jp git@github.com:peggylau/jp.git（github上的jp）
 Ø Git push origin master  将本地仓库同步到远端服务器 (加上 -u 参数把本地与远程master分支关联起来)
 
+git pull --rebase origin master （pull=fetch+merge）
+
+
 git的基本工作流程：
 1、创建或修改文件
 2、使用git add命令添加新创建或修改的文件到本地的缓存区（Index）
