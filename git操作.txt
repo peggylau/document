@@ -1,0 +1,44 @@
+HTTPS:    https://github.com/peggylau/python.git
+SSH:        git@github.com:peggylau/python.git
+
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/peggylau/fiverr.git
+git push -u origin master
+
+
+Ø Git配置
+Git config - - global user.name "peggylau"
+Git config - - global user.email "peggylau@163.com"
+	
+生成密钥：$ ssh-keygen -t rsa -C "youremail@example.com"
+	
+Ø Clone一个仓库：
+git Clone https://github.com/peggylau/python.git
+Ø git status：查看当前git仓库的状态
+Ø git diff - - cached  看看缓存区中哪些文件被修改了
+Ø Git commit -m "add 3 files" ( -m 添加本次修改的注释)
+Ø git remote add origin git@server-name:path/repo-name.git
+Ø git remote add python git@github.com:peggylau/python.git(github上的python)
+Ø git remote add jp git@github.com:peggylau/jp.git（github上的jp）
+Ø Git push origin master  将本地仓库同步到远端服务器 (加上 -u 参数把本地与远程master分支关联起来)
+
+git的基本工作流程：
+1、创建或修改文件
+2、使用git add命令添加新创建或修改的文件到本地的缓存区（Index）
+3、使用git commit命令提交到本地代码库
+4、使用git push命令将本地代码库同步到远端代码库（可选,有时候并没有可以同步的远端代码库）
+
+Git config	配置相关信息
+Git clone	复制仓库
+Git init	初始化仓库
+Git add	添加更新内容到索引中
+Git diff 	比较内容
+Git status	获取当前项目状况
+Git commit	提交
+Git branch	分支相关
+Git checkout	切换分支
+Git merge	合并分支
+Git reset	恢复版本
+Git log	查看日志
